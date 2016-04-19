@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+</head>
+<body>
+<header>
+	<a href="index.html" id="logo" >
+<h1>Travels &amp; Sports</h1>
+<h2>Travel Inside</h2>
+	</a>
+	<nav>
+<ul>
+<li>Travels</li>
+<li>About</li>
+<li>Contacts</li>
+
+
+</ul>
+	</nav>
+
+
+</body>
+</html>
+
+
+
+
+<footer>
+<p>&copy; 2016 Nadia Spagnuolo</p>
+		</footer>
+------------------------------------------------------
+
+primo file main.css
+
+
+/*********** GENERAL ***************/
+body {font-family: Corbel, Arial, sans-serif; margin:0;  }
+
+
+
+a {color: #000000; text-decoration: none; }
+
+/*********** HEADER ***************/	
+
+#header 
+{ background-color: #6ab47b; }
+h1 { font-size:36px; margin: 0; text-align: center; padding: 15px 0 0 0; color: #ffffff  }
+h2 { text-align: center; margin: 0; color: #ffffff}
+
+#nav 
+{background-color: #599a74; text-align: center; list-style-type: none;} /*****none to delete the bullet points****/
+
+
+#nav li  { display: inline-block; padding: 6px 8px;}
+
+#nav li a {color: #ffffff; }
+
+#nav li:hover {background-color: #6ab47b; } /*hover:stazionare - pseudo class:the link highlights with a different color when passing the mouse on it*/
+
+
+/*********** CONTENT ***************/
+#content { width: 600px; 
+margin: 30px auto;}
+
+#content h3  { border-bottom: #599a74 solid 3px;
+}
+
+/****Tag section: eliminates gerarchy of the elements ex. main h1 + section that contains another h1, the second one has not the same relevance as the forst one**/ ;
