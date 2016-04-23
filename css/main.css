@@ -14,7 +14,7 @@ a { text-decoration: none;}
 #logo {text-align: center; }
 
 .main-header 	{ 
-	background-color: rgba(106, 180, 123, 0.6);
+	background-color: #ffffff;
 	margin: 0 0 0 0;
 	padding: 5px 0 0 0; 
 	overflow: auto;
@@ -27,10 +27,10 @@ a { text-decoration: none;}
 	Not only the backgroun color-->work directly on background color : w3schools- color picker**/
 	} 
 
-	h1	{color: #ffffff; 
+	h1	{color: #599a74; 
 		margin: 8px 0 3px 0;
 		font-size: 1.8em;}
-	h2	{color: #ffffff; 
+	h2	{color: #599a74; 
 		margin: 3px 0 10px 0; 
 		font-size: 1.0em; }
 
@@ -53,8 +53,12 @@ nav a.selected {color: #27583F; }
 .banner { 
 text-align: center;
 padding: 382px 0 30px 0;
-background: url(../immagini/sole.jpg) no-repeat center / cover;
+background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+
+url(../immagini/sole.jpg) no-repeat center / cover;
 /**repeat-x= the image repeats only orizontaly**/
+/**background-image: linear-gradient {#003300, #33cc33} to create a 2 color hue/shade(sfumatura) over the background image - Default: First color to the top.
+ To change it: to top, #003300, #33cc33 --> first color from bottom TO TOP   OR   use degrees --> ex 0deg   OR  radial-gradient **/ 
 }
 
 .banner p {font-size:  1.4em; 
@@ -77,6 +81,7 @@ img {max-width: 100%; }
 	margin: 2.5%;
 	background-color: #f5f5f5;
 	position: relative;
+	box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.5); /**5px right if left --> -5px and -7px for top; 5px is the shade/sfumatura **/
    }
 #gallery li:nth-child(2n+1) {clear: left; }
 
