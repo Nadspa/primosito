@@ -29,7 +29,8 @@ a { text-decoration: none;}
 
 	h1	{color: #599a74; 
 		margin: 8px 0 3px 0;
-		font-size: 1.8em;}
+		font-size: 1.8em;
+		text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4);}
 	h2	{color: #599a74; 
 		margin: 3px 0 10px 0; 
 		font-size: 1.0em; }
@@ -40,6 +41,7 @@ nav { background-color: #599a74; text-align: center; padding: 5px 0 5px 0;  }
 nav a { color: #ffffff;
 font-weight: bold;
 padding: 0 2px;
+transition: all 1s; /** the hover color applies after 1 second**/
 }
 
 nav ul {list-style: none; margin: 5px 0; padding: 0; }
@@ -53,9 +55,9 @@ nav a.selected {color: #27583F; }
 .banner { 
 text-align: center;
 padding: 382px 0 30px 0;
-background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
 
-url(../immagini/sole.jpg) no-repeat center / cover;
+url(../immagini/sea.jpg) no-repeat center / cover;
 /**repeat-x= the image repeats only orizontaly**/
 /**background-image: linear-gradient {#003300, #33cc33} to create a 2 color hue/shade(sfumatura) over the background image - Default: First color to the top.
  To change it: to top, #003300, #33cc33 --> first color from bottom TO TOP   OR   use degrees --> ex 0deg   OR  radial-gradient **/ 
@@ -63,6 +65,7 @@ url(../immagini/sole.jpg) no-repeat center / cover;
 
 .banner p {font-size:  1.4em; 
 color: #ffffff;}
+
 /*************************SECTION************************************/
 .wrapper {
 	max-width: 1000px;
@@ -81,8 +84,13 @@ img {max-width: 100%; }
 	margin: 2.5%;
 	background-color: #f5f5f5;
 	position: relative;
-	box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.5); /**5px right if left --> -5px and -7px for top; 5px is the shade/sfumatura **/
-   }
+	/**box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.5); /**5px right, if left --> -5px and -7px for top; 5px is the shade/sfumatura **/
+	transition: all 0.2s;
+}
+#gallery li:hover {
+	box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
 #gallery li:nth-child(2n+1) {clear: left; }
 
 #gallery li a p
@@ -95,7 +103,6 @@ img {max-width: 100%; }
 	top: -10px;
 	right: -10px;
 	width: 50px;
-
  }
 
 
@@ -105,14 +112,19 @@ img {max-width: 100%; }
 .main-footer {
 	text-align: center;
  clear: both; 
- padding: 30px 0; background-color: #6ab47b; 
+ padding: 30px 0; background-color: #599a74; 
 /***to clean the right and left side o the element***/ }
 
 .main-footer p {font-size: 0.85em; } /**Matteo questo non l ha cambiato**/
+
 /*************************ABOUT************************************/
 .container {
 
-	background-color: #6ab47b;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+
+url(../immagini/map.jpg) no-repeat center / cover;
+background-attachment: fixed;
+
 	padding: 70px 0 10px 0;
 }
 
@@ -124,6 +136,9 @@ max-width: 200px;
 margin: 20px auto 40px;
 border-radius: 100%;
 }
+.container p { 
+color: #ffffff;}
+h3 {color: #ffffff}
 
 /*************************CONTACT************************************/
 
